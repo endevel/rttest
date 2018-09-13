@@ -19,7 +19,7 @@ public class Consumer extends Thread {
             if ((obj = circleBuffer.get()) == null) {
                 try {
                     System.out.println(getName() + " Consumer #" + getId() + " will wait");
-                    circleBuffer.wait(1000);
+                    circleBuffer.wait(500);
                     System.out.println(getName() + " Consumer #" + getId() + " woke up");
                 } catch (InterruptedException e) {
                     e.printStackTrace();

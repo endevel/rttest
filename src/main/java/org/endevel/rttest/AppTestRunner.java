@@ -6,6 +6,9 @@ import org.endevel.rttest.entity.Producer;
 
 import java.util.Arrays;
 
+/**
+ * Используется в качестве стенда для тестовых прогонов работы с CircleBuffer
+ */
 public class AppTestRunner {
 
     public static void main(String[] args) throws InterruptedException {
